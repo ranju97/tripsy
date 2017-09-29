@@ -8,12 +8,14 @@
 
     <LinearLayout
         android:id="@+id/ll_login_actions"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:visibility="gone"
-        android:padding="10dp">
+        android:padding="10dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
 
         <Button
             android:id="@+id/but_login"
