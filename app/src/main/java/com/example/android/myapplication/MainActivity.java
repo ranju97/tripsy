@@ -6,7 +6,7 @@ import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static String deviceId;
 
-    private LinearLayout ll_login_actions;
+    private RelativeLayout ll_login_actions;
     private Button but_login , but_signup;
 
     private FirebaseAuth mFirebaseAuth;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initUI() {
-        ll_login_actions = (LinearLayout)findViewById(R.id.ll_login_actions);
+        ll_login_actions = (RelativeLayout) findViewById(R.id.ll_login_actions);
         but_login = (Button)findViewById(R.id.but_login);
         but_signup = (Button)findViewById(R.id.but_signup);
     }
